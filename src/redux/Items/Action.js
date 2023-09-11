@@ -15,6 +15,6 @@ export const getItemList = () => async (dispatch) => {
       });
     })
     .catch((err) => {
-      console.log(err);
+      console.log(err,"api err");
     });
 };

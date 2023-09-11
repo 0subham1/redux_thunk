@@ -5,11 +5,10 @@ import Cart from "./components/Cart";
 
 const App = () => {
   const dispatch = useDispatch();
-  const itemList = useSelector((state) => state.itemReducer);
+  const itemList = useSelector((state) => state.itemReducer.itemList);
 
   console.log(itemList, "itemList");
   useEffect(() => {
-    console.log("hello");
     dispatch(getItemList());
   }, []);
   return (
