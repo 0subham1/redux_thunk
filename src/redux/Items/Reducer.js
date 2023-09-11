@@ -6,14 +6,15 @@ const initialState = {
 const itemReducer = (state = initialState, action) => {
   switch (action.type) {
     case AT_ITEM_LIST:
+      console.log("AT_ITEM_LIST")
       state = {
         ...state,
-        error: "",
         itemList: action.payload,
       };
       break;
 
     default:
+      console.log("default")
       state = { ...state };
       break;
   }

@@ -6,7 +6,7 @@ export const AT_ITEM_ADD = 'AT_ITEM_ADD';
 
 export const getItemList = () => async (dispatch) => {
   axios
-    .post(BASE_URL + "items")
+    .get(BASE_URL + "items")
     .then((res) => {
         console.log(res?.data,"res?.data")
       dispatch({
