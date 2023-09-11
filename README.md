@@ -1,6 +1,4 @@
-reducer fn pure fn
-
-thunk fn returns different fn
+steps
 
 1 redux> items>action
 2 redux> items>reducer
